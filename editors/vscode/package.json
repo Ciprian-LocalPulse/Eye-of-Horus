@@ -1,0 +1,28 @@
+{
+  "name": "eye-of-horus-vscode",
+  "displayName": "Eye of Horus",
+  "description": "Future VS Code support for Eye of Horus.",
+  "version": "0.0.0",
+  "publisher": "eye-of-horus",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "eoh",
+        "aliases": ["Eye of Horus", "eoh"],
+        "extensions": [".eoh"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eoh",
+        "scopeName": "source.eoh",
+        "path": "./syntaxes/eoh.tmLanguage.json"
+      }
+    ]
+  }
+}

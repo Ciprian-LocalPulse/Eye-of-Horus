@@ -1,0 +1,17 @@
+{
+  "scopeName": "source.eoh",
+  "patterns": [
+    {
+      "name": "keyword.control.eoh",
+      "match": "\\b(ORIGIN|VERTEX|VECTOR|SHAPE_TETRA|SHAPE_SPHERE|SHAPE_CUBE|PULSE_HIGGS)\\b"
+    },
+    {
+      "name": "constant.numeric.eoh",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    {
+      "name": "comment.line.number-sign.eoh",
+      "match": "#.*$"
+    }
+  ]
+}

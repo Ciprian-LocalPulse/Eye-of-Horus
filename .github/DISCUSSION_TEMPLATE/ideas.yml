@@ -1,0 +1,10 @@
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Describe the idea and whether it is implementation, research, or documentation.
+    validations:
+      required: true

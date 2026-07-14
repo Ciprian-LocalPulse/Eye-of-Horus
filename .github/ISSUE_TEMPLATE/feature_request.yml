@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose an improvement or future feature.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+    validations:
+      required: true
+  - type: dropdown
+    id: needs-rfc
+    attributes:
+      label: Does this need an RFC?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"

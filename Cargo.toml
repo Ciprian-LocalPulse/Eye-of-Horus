@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "crates/eoh-core",
+    "crates/eoh-cli",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://agentflow-enterprise.com"
+authors = ["Ciprian Stefan Plesca"]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"

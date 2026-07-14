@@ -1,0 +1,11 @@
+/target/
+**/*.rs.bk
+Cargo.lock
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+/website/dist/
+/book/book/
+/.vscode/
+!editors/vscode/

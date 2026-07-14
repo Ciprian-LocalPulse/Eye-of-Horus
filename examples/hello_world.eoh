@@ -1,0 +1,5 @@
+# Eye of Horus placeholder example
+# TODO: future Hello World once output semantics are defined.
+
+ORIGIN 0.0, 0.0, 0.0
+PULSE_HIGGS ORIGIN, v=1.0
