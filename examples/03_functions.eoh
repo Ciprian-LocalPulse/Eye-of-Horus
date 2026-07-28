@@ -1,0 +1,13 @@
+// examples/03_functions.eoh
+//
+// Demonstrates function declarations and basic arithmetic — a preview of
+// the computational subset of the language.
+
+FN golden_scale(base: Float) -> Float {
+    LET phi = 1.618033988749895
+    RETURN base * phi
+}
+
+ORIGIN 0.0, 0.0, 0.0
+
+VERTEX SEED 1.0, 0.0, 0.0

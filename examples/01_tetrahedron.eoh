@@ -1,0 +1,23 @@
+// examples/01_tetrahedron.eoh
+//
+// The canonical "hello world" of Eye of Horus: declare an origin, four
+// vertices forming a regular tetrahedron, and emit a Higgs pulse from the
+// origin to activate the shape.
+
+ORIGIN 0.0, 0.0, 0.0
+
+VERTEX A 1.0, 1.0, 1.0
+VERTEX B 1.0, -1.0, -1.0
+VERTEX C -1.0, 1.0, -1.0
+VERTEX D -1.0, -1.0, 1.0
+
+EDGE A -> B
+EDGE A -> C
+EDGE A -> D
+EDGE B -> C
+EDGE B -> D
+EDGE C -> D
+
+SHAPE_TETRA T1 A, B, C, D
+
+PULSE_HIGGS A, v=1.618

@@ -1,0 +1,22 @@
+// examples/02_cube_pulse_field.eoh
+//
+// Demonstrates a LET binding, a cube shape with a named scalar parameter,
+// and a slower pulse to show wavefront timing.
+
+ORIGIN 0.0, 0.0, 0.0
+
+LET scale = 2.0
+
+VERTEX CENTER 0.0, 0.0, 0.0
+VERTEX C1 1.0, 1.0, 1.0
+VERTEX C2 1.0, 1.0, -1.0
+VERTEX C3 1.0, -1.0, 1.0
+VERTEX C4 1.0, -1.0, -1.0
+VERTEX C5 -1.0, 1.0, 1.0
+VERTEX C6 -1.0, 1.0, -1.0
+VERTEX C7 -1.0, -1.0, 1.0
+VERTEX C8 -1.0, -1.0, -1.0
+
+SHAPE_CUBE MAIN_CUBE CENTER, size=scale
+
+PULSE_HIGGS CENTER, v=0.5

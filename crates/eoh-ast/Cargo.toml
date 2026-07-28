@@ -1,0 +1,12 @@
+[package]
+name        = "eoh-ast"
+description = "Eye of Horus — abstract syntax tree definitions"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core = { path = "../eoh-core" }
+serde    = { workspace = true }
