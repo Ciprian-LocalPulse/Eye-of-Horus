@@ -1,0 +1,28 @@
+// 1. Invisible rules (Automatically ignored by the parser)
+WHITESPACE = _{ " " | "\t" | "\r" | "\n" }
+COMMENT = _{ ("//" | "#") ~ (!"\n" ~ ANY)* }
+
+// 2. Primitive data types
+ident = @{ ASCII_ALPHA ~ (ASCII_ALPHANUMERIC | "_")* }
+number = @{ "-"? ~ ASCII_DIGIT+ ~ ("." ~ ASCII_DIGIT+)? }
+
+// 3. Keywords
+cmd_origin = _{ "ORIGIN" }
+cmd_vertex = _{ "VERTEX" }
+cmd_tetra = _{ "SHAPE_TETRA" }
+cmd_sphere = _{ "SHAPE_SPHERE" }
+cmd_pulse = _{ "PULSE_HIGGS" }
+
+// 4. Structural components
+coord_3d = { number ~ "," ~ number ~ "," ~ number }
+
+// 5. The actual instructions (Forms)
+decl_origin = { cmd_origin ~ coord_3d }
+decl_vertex = { cmd_vertex ~ ident ~ coord_3d }
+decl_tetra = { cmd_tetra ~ ident ~ ident ~ "," ~ ident ~ "," ~ ident ~ "," ~ ident }
+decl_sphere = { cmd_sphere ~ ident ~ ident ~ "," ~ "r=" ~ number }
+decl_pulse = { cmd_pulse ~ ident ~ "," ~ "v=" ~ number }
+
+// 6. Root of the program
+statement = { decl_origin | decl_vertex | decl_tetra | decl_sphere | decl_pulse }
+program = { SOI ~ statement* ~ EOI }

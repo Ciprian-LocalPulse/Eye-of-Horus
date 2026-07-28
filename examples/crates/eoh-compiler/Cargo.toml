@@ -1,0 +1,18 @@
+[package]
+name        = "eoh-compiler"
+description = "Eye of Horus — compiler pipeline: type-check → lower → emit bytecode"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core   = { path = "../eoh-core" }
+eoh-ast    = { path = "../eoh-ast" }
+eoh-lexer  = { path = "../eoh-lexer" }
+eoh-parser = { path = "../eoh-parser" }
+thiserror  = { workspace = true }
+serde      = { workspace = true }
+serde_json = { workspace = true }
+log        = { workspace = true }

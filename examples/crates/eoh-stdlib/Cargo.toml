@@ -1,0 +1,14 @@
+[package]
+name        = "eoh-stdlib"
+description = "Eye of Horus — standard library of geometric operations and built-ins"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core = { path = "../eoh-core" }
+eoh-vm   = { path = "../eoh-vm" }
+nalgebra = { workspace = true }
+log      = { workspace = true }

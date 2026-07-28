@@ -1,0 +1,16 @@
+[package]
+name        = "eoh-vm"
+description = "Eye of Horus — spatial virtual machine and pulse simulator"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core     = { path = "../eoh-core" }
+eoh-compiler = { path = "../eoh-compiler" }
+thiserror    = { workspace = true }
+log          = { workspace = true }
+serde        = { workspace = true }
+serde_json   = { workspace = true }

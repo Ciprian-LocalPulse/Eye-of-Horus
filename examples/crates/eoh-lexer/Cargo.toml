@@ -1,0 +1,16 @@
+[package]
+name        = "eoh-lexer"
+description = "Eye of Horus — lexer (tokeniser) for .eoh source files"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core  = { path = "../eoh-core" }
+thiserror = { workspace = true }
+log       = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

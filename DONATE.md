@@ -1,14 +1,12 @@
 # Donate
 
-Eye of Horus is community funded.
-
-Every contribution supports research, documentation, compiler development, tooling, documentation translations, infrastructure, testing, CI/CD, website hosting, and long-term open source sustainability.
+Eye of Horus is community funded. Every contribution, regardless of size, directly supports research, formal specification work, compiler and runtime development, tooling, documentation and translations, infrastructure, testing, continuous integration, website hosting, and the long-term sustainability of the project as open-source software.
 
 ## PayPal
 
 [paypal.me/agentflowenterprise](https://paypal.me/agentflowenterprise)
 
-## Bank Transfer EUR / SEPA
+## Bank Transfer — EUR / SEPA
 
 | Field | Value |
 |---|---|
@@ -17,7 +15,7 @@ Every contribution supports research, documentation, compiler development, tooli
 | BIC/SWIFT | TRWIBEB1XXX |
 | Bank | Wise, Rue du Trone 100, Brussels, Belgium |
 
-## Bank Transfer GBP
+## Bank Transfer — GBP
 
 | Field | Value |
 |---|---|
@@ -27,7 +25,7 @@ Every contribution supports research, documentation, compiler development, tooli
 | IBAN | GB68 TRWI 2314 7092 0553 72 |
 | BIC/SWIFT | TRWIGB2LXXX |
 
-## Bank Transfer USD
+## Bank Transfer — USD
 
 | Field | Value |
 |---|---|
@@ -46,19 +44,19 @@ Every contribution supports research, documentation, compiler development, tooli
 
 `0x27d9a6a5b8507e6031bb044319410da96222d402`
 
-## Transparency
+## What Your Contribution Funds
 
 Every contribution, no matter how small, directly funds:
 
-- research;
-- documentation;
-- compiler development;
-- tooling;
+- language and semantics research;
+- documentation, including the specification set in [`spec/`](spec/README.md) and the tutorial [book](book/README.md);
+- compiler and runtime development, per the roadmap in [`ROADMAP.md`](ROADMAP.md);
+- editor and tooling work, including the VS Code extension and Language Server;
 - documentation translations;
-- infrastructure;
-- testing;
-- CI/CD;
+- infrastructure, testing, and continuous integration;
 - website hosting;
-- long-term open source sustainability.
+- the long-term sustainability of Eye of Horus as independent open-source software, free of commercial sponsorship obligations that could compromise the honesty commitments in [`MANIFESTO.md`](MANIFESTO.md).
 
-Do not accept or publish changed financial instructions from unverified contributors.
+## Transparency and Security Note
+
+The financial details above are the only official, currently published donation channels for this project. Do not accept or act on changed financial instructions — a different IBAN, wallet address, or payment link — from anyone claiming to represent Eye of Horus outside of this file and the project's official website. If you believe you have encountered a fraudulent request purporting to be from this project, please report it using the contact information in [`SUPPORT.md`](SUPPORT.md).

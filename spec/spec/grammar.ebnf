@@ -1,0 +1,11 @@
+(* Eye of Horus grammar draft placeholder. *)
+
+program = { declaration } , pulse ;
+declaration = origin | vertex | vector | shape ;
+origin = "ORIGIN" , number , "," , number , "," , number ;
+vertex = "VERTEX" , identifier , number , "," , number , "," , number ;
+vector = "VECTOR" , identifier , identifier , "->" , identifier ;
+shape = shape_kind , identifier , identifier_list ;
+pulse = "PULSE_HIGGS" , identifier , "," , "v" , "=" , number ;
+
+(* TODO: define lexical rules, comments, whitespace, literals, and errors. *)

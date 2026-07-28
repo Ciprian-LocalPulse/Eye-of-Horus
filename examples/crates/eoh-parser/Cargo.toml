@@ -1,0 +1,18 @@
+[package]
+name        = "eoh-parser"
+description = "Eye of Horus — recursive-descent parser producing an EOH AST"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+eoh-core   = { path = "../eoh-core" }
+eoh-lexer  = { path = "../eoh-lexer" }
+eoh-ast    = { path = "../eoh-ast" }
+thiserror  = { workspace = true }
+log        = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
